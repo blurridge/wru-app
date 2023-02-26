@@ -2,9 +2,14 @@
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
+    "./node_modules/tw-elements/dist/js/**/*.js",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'mac-gradient': "url('/src/assets/background.jpg')",
+      }
+    },
   },
-  plugins: [],
+  plugins: [require("tw-elements/dist/plugin")]
 }

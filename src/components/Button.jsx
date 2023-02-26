@@ -1,15 +1,17 @@
-import React from "react";
+import React from 'react'
 
-function Button() {
+export const Button = () => {
   return (
     <>
-      <div className="px-6 flex flex-wrap">
-        <button className="mx-2 my-2 bg-white transition duration-150 ease-in-out hover:border-gray-900 hover:text-gray-900 rounded border border-gray-800 text-gray-800 px-6 py-2 text-xs">
-          Button
+      <div class="flex justify-center space-x-2">
+        <button
+          type="button"
+          data-te-ripple-init
+          class="inline-block rounded-full bg-neutral-50 px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-neutral-800 shadow-[0_4px_9px_-4px_#fbfbfb] transition duration-150 ease-in-out hover:bg-neutral-100 hover:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] focus:bg-neutral-100 focus:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] focus:outline-none focus:ring-0 active:bg-neutral-200 active:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)]"
+        >
+          Light
         </button>
       </div>
     </>
-  );
-}
-
-export default Button;
+  )
+};
