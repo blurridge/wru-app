@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "./Button";
+import { ButtonList } from "./ButtonList";
 import { Profile } from "./Profile";
 
 export const Card = () => {
@@ -7,7 +7,7 @@ export const Card = () => {
     <>
       <div class="space-y-5">
         <Profile />
-        <Button />
+        <ButtonList />
       </div>
     </>
   );
