@@ -1,10 +1,18 @@
 import React from "react";
+import { useState, useEffect } from "react";
+import { getLinks } from "../utils/getLinks";
 import { Button } from "./Button";
 
 export const ButtonList = () => {
-  const buttons = [];
-  for (let i = 0; i < 3; i++) {
-    buttons.push(<Button name={i} />);
-  }
-  return buttons;
+  const [links, setLinks] = useState([]);
+
+  useEffect(() => {
+    const getData = async () => {
+      const linkData = await getLinks();
+      setLinks([...linkData]);
+    };
+    getData();
+  }, []);
+
+  return links.map((link, index) => <Button key={index} props={link} />);
 };
