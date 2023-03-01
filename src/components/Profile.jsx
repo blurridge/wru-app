@@ -22,7 +22,7 @@ export const Profile = () => {
           class="w-32 rounded-full shadow-lg"
           alt="Avatar"
         />
-        <h5 class="mb-2 text-xl font-medium leading-tight text-white">
+        <h5 class="mb-2 text-4xl font-title font-medium leading-tight text-white">
           {profile.length !== 0 && profile[0].name}
         </h5>
         <p class="text-white">{profile.length !== 0 && profile[0].fields}</p>
