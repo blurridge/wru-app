@@ -8,7 +8,11 @@ module.exports = {
     extend: {
       backgroundImage: {
         'mac-gradient': "url('/src/assets/background.jpg')",
-      }
+      },
+      fontFamily: {
+        'title': ['Tilt Warp'],
+        'normal': ['Roboto'],
+      },
     },
   },
   plugins: [require("tw-elements/dist/plugin")]
