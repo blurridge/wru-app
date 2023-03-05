@@ -1,10 +1,10 @@
 import React from "react";
 
-export const Button = ({ props }) => {
+export const Button = ({ link }) => {
   return (
     <>
       <div class="flex justify-center space-x-2">
-        <a href={props.link} target="_blank" rel="noreferrer">
+        <a href={link.link} target="_blank" rel="noreferrer">
           <button
             type="button"
             data-te-ripple-init
@@ -14,7 +14,7 @@ export const Button = ({ props }) => {
             focus:outline-none focus:ring-0 active:bg-neutral-200 active:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] 
             w-24 text-[0.60rem] text-center sm:w-32 sm:text-sm"
           >
-            {props.name}
+            {link.name}
           </button>
         </a>
       </div>
