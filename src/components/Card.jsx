@@ -5,7 +5,7 @@ import { Profile } from "./Profile";
 export const Card = () => {
   return (
     <>
-      <div class="space-y-5">
+      <div class="mt-auto space-y-5">
         <Profile />
         <ButtonList />
       </div>
