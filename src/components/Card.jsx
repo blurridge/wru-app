@@ -2,12 +2,12 @@ import React from "react";
 import { ButtonList } from "./ButtonList";
 import { Profile } from "./Profile";
 
-export const Card = () => {
+export const Card = ({ profile, links }) => {
   return (
     <>
       <div class="mt-auto space-y-5">
-        <Profile />
-        <ButtonList />
+        <Profile profile={profile} />
+        <ButtonList links={links} />
       </div>
     </>
   );
