@@ -7,7 +7,7 @@ export const Profile = ({ profile }) => {
       <div class="flex flex-col items-center space-y-5">
         <img
           src={profilePic}
-          class="rounded-full shadow-lg w-28 sm:w-32"
+          class="rounded-full object-cover shadow-lg w-32 h-32 sm:w-40 sm:h-40"
           alt="Avatar"
         />
         <h5 class="mb-2 font-title font-medium leading-tight text-white text-2xl sm:text-4xl">
