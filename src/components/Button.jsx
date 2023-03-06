@@ -12,7 +12,7 @@ export const Button = ({ link }) => {
             shadow-[0_4px_9px_-4px_#fbfbfb] transition duration-150 ease-in-out hover:bg-neutral-100 hover:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] 
             focus:bg-neutral-100 focus:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] 
             focus:outline-none focus:ring-0 active:bg-neutral-200 active:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.3),0_4px_18px_0_rgba(251,251,251,0.2)] 
-            w-24 text-[0.60rem] text-center sm:w-32 sm:text-sm"
+            w-28 text-[0.60rem] text-center sm:w-32 sm:text-sm"
           >
             {link.name}
           </button>
